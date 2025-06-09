@@ -9,3 +9,16 @@ html {
 body {
     margin: 0;
 }
+
+.backgroundAzul {
+    background-color: #02A28F;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFF;
+
+}
