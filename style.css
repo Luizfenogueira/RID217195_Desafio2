@@ -10,10 +10,6 @@ body {
     margin: 0;
 }
 
-.backgroundAzul {
-    background-color: #02A28F;
-}
-
 h1 {
     font-weight: 700;
     font-size: 2.2rem;
@@ -30,6 +26,15 @@ h2 {
     margin: 0;
 }
 
+.backgroundAzul {
+    background-color: #02A28F;
+    color: #fff;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 .container {
     margin: 0;
     display: flex;
@@ -41,7 +46,7 @@ h2 {
 
 .cardImageOverlay {
     position: relative;
-    width: 65%;
+    width: 60%;
     height: auto;
     overflow: hidden;
     border-radius: .5rem;
@@ -51,6 +56,7 @@ h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .cardContent {
@@ -74,16 +80,76 @@ h2 {
     width: 30%;
     border-radius: 8px;
     font-size: 1rem;
-    padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 0 .8rem 0;
 }
 
-.articles {
+.articlesPost {
+    width: 30%;
+    margin-left: .5rem;
+}
+
+.articlesTitle {
+    padding: .2rem .5rem .2rem .5rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: .8rem;
+    margin: 0;
+    color: #000000;
+}
+
+.articleInfo>span {
+    font-size: .75rem;
+    color: #333;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.article {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid #eee;
+    background-color: #f8f8f8;
+    border-radius: .2rem;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.319);
 }
 
-.listArticles>ul>li {
+.article:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.article>img {
+    width: 8.2rem;
+    height: 4.3rem;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.listArticles {
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.articleInfo {
+    flex-grow: 1
+}
+
+.articleInfo>span {
+    font-size: .75rem;
+    color: #616161;
+}
+
+.article>h4 {
+    align-items: start;
 }
