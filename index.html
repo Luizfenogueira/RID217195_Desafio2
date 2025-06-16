@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <section>
+    <section class="backBlue">
         <header>
             <h1>The Dev News</h1>
         </header>
@@ -23,98 +23,131 @@
 
     <main>
         <section class="leftColumn">
-            <div class="principalBanner">
-                <div class="imageText">
-                    <p>opinião</p>
+            <div class="principalBanner radius">
+                <div class="imageText radius">
+                    <span>opinião</span>
                     <h2>Como é ser um desenvolvedor</h2>
-                    <p><b>By</b> Fabio Tetsuo</p>
+                    <p class="author"><b>By</b> Fabio Tetsuo</p>
                 </div>
-                <div class="principalImage"><img src="./assets/img.jpg" alt="Cidade a noite"></div>
+                <div class="gradientPrincipal radius"></div>
             </div>
+
+            <div class="recentPosts">
+                <div class="recentPostsTile backBlue radius">
+                    <h2>Posts mais recentes</h2>
+                    <a>Ver todos</a>
+                </div>
+
+                <div class="cardsList">
+
+                    <div class="card">
+                        <img src="./assets/post1.svg" alt="">
+                        <div class="cardText">
+                            <span class="cardType">Desenvolvimento</span>
+                            <h3 class="cardTitle">Desenvolvimento mobile</h3>
+                            <span class="cardAuthor"><P>By</P> Fabio Tetsuo</span>
+                            <p class="cardContent">Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.</p>
+                            <span class="cardDate">22 Agosto 2022</span>
+
+                    <div class="card">
+                        <img src="./assets/post2.svg" alt="">
+                        <div class="cardText">
+                            <span class="cardType">saude</span>
+                            <h3 class="cardTitle">Balancear vida profissional e pessoal</h3>
+                            <span class="cardAuthor"><P>By</P> Ridho Satriawan</span>
+                            <p class="cardContent">Lorem ipsum dolor sit amet consectetur. Et consectetur at consectetur sed nisl tempor.</p>
+                            <span class="cardDate">22 Agosto 2022</span>
+
+                    <div class="card">
+                        <img src="./assets/post3.svg" alt="">
+                        <div class="cardText">
+                            <span class="cardType">Desenvolvimento</span>
+                            <h3 class="cardTitle">Configurando VSCode</h3>
+                            <span class="cardAuthor"><P>By</P> Fabio Tetsuo</span>
+                            <p class="cardContent">Lorem ipsum dolor sit amet consectetur. Erat interdum tortor ac sagittis id a etiam. Tellus vitae arcu dignissim massa aliquam vel tellus. Ipsum massa arcu nulla sed purus in ac.</p>
+                            <span class="cardDate">22 Agosto 2022</span>
+
+                    <div class="card">
+                        <img src="./assets/post4.svg" alt="">
+                        <div class="cardText">
+                            <span class="cardType">produtividade</span>
+                            <h3 class="cardTitle">2 monitores ou 1 ultrawide?</h3>
+                            <span class="cardAuthor"><P>By</P> Fulano da Silva</span>
+                            <p class="cardContent">Lorem ipsum dolor sit amet consectetur. Arcu tellus adipiscing sagittis tristique. Eget molestie posuere enim pretium venenatis nunc ligula donec a. Velit senectus amet nulla.</p>
+                            <span class="cardDate">22 Agosto 2022</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
+        <section class="rightColumn">
+            <div class="popularPosts">
+                <div class="popularPostsTitle backBlue radius">
+                    <h2>Posts populares</h2>
+                </div>
 
-
-    </main>
-
-</body>
-
-
-
-
-
-
-<!--     <header>
-        <Section class="backgroundAzul">
-            <div class="headerText">
-                <h1>The Dev News</h1>
-            </div>
-        </Section>
-    </header>
-
-    <main>
-        <section>
-            <div class="container">
-                <div class="cardImageOverlay">
-                    <img src="./assets/img.jpg" alt="Prédios da cidade ao anoitecer">
-                    <div class="cardContent">
-                        <span class="tag">opinião</span>
-                        <h2>Como é ser um desenvolvedor</h2>
-                        <p class="autor"> <b>By</b> Fabio Tetsuo</p>
+                <div class="post radius">
+                    <img src="./assets/article1.svg" alt="Mulher programando">
+                    <div>
+                        <h3 class="postTitle">Desevolvimento atual</h3>
+                        <p class="postDate">22 Agosto 2022</p>
                     </div>
                 </div>
 
-                <section class="articlesPost">
-                    <div class="articlesTitle backgroundAzul">
-                        <h3>Posts populares</h3>
+                <div class="post radius">
+                    <img src="./assets/article2.svg" alt="Imagem do GitLab">
+                    <div>
+                        <h3 class="postTitle">GitLab vs GitHub</h3>
+                        <p class="postDate">22 Agosto 2022</p>
                     </div>
+                </div>
 
-                    <ul class="listArticles">
-
-                        <li class="article">
-                            <img src="./assets/article1.svg" alt="">
-                            <div class="articleInfo">
-                                <h4>Desevolvimento atual</h4>
-                                <span>22 Agosto 2022</span>
-                            </div>
-
-                        </li>
-
-                        <li class="article">
-                            <img src="./assets/article2.svg" alt="">
-                            <div class="articleInfo">
-                                <h4>GitLab vs GitHub</h4>
-                                <span>22 Agosto 2022</span>
-                            </div>
-                        </li>
-
-                        <li class="article">
-                            <img src="./assets/article3.svg" alt="">
-                            <div class="articleInfo">
-                                <h4>Café atrapalha?</h4>
-                                <span>22 Agosto 2022</span>
-                            </div>
-                        </li>
-
-                    </ul>
-
-                </section>
-
+                <div class="post">
+                    <img src="./assets/article3.svg" alt="Imagem de um notebook com café ao lado">
+                    <div>
+                        <h3 class="postTitle">Café atrapalha?</h3>
+                        <p class="postDate">22 Agosto 2022</p>
+                    </div>
+                </div>
             </div>
 
-        </section>
+            <div class="categorie">
+                <div class="CategorieTitle backBlue radius">
+                    <h2>Categorias</h2>
+                </div>
 
-        <section>
+                <div class="categorieList">
+                    <div class="categorieItem">
+                        <span>> saude</span>
+                        <span>(1)</span>
+                    </div>
 
+                    <div class="categorieItem">
+                        <span>> desenvolvimento</span>
+                        <span>(2)</span>
+                    </div>
+
+                    <div class="categorieItem">
+                        <span>> produtividade</span>
+                        <span>(2)</span>
+                    </div>
+
+                    <div class="categorieItem">
+                        <span>> opiniao</span>
+                        <span>(1)</span>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <section>
+    <section>
+        <footer class="backBlue">
+            <p>Copyright@The Dev News</p>
+        </footer>
+    </section>
 
-        </section>
-    </footer>
-
-</body>
-
-</html> -->
+</html>
