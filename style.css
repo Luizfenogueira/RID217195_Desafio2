@@ -15,14 +15,14 @@
     border-radius: .6rem
 }
 
-header {
+nav {
     width: 90vw;
     max-width: 1440px;
     margin: auto;
     padding: 1rem 9.5rem;
 }
 
-header>h1 {
+nav>h1 {
     font-weight: 700;
     font-size: 2.2rem;
 }
@@ -92,10 +92,19 @@ main {
     font-size: 1.2rem;
     line-height: 100%;
     color: black;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 }
 
-.cardAuthor{
+.cardAuthor {
     font-weight: 500;
+    font-size: .8rem;
+    line-height: 100%;
+    color: #616161;
+}
+
+.cardAuthor>b {
+    font-weight: 700;
     font-size: .8rem;
     line-height: 100%;
     color: #616161;
@@ -106,6 +115,8 @@ main {
     font-size: .8rem;
     line-height: 100%;
     color: black;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 }
 
 .cardDate {
@@ -115,26 +126,40 @@ main {
     color: #616161;
 }
 
-.recentPosts{
+.recentPosts {
     padding-top: 1.5rem;
+
 }
 
-.recentPostTilte>a{
+.seeAll {
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: .8rem;
+    text-decoration: underline;
 }
 
+.recentPostsTitle {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
 
+.cardsList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: .8rem;
+}
 
+.card {
+    box-shadow: 0px 10px 10px 0px #0000001a;
+}
 
-
-
-
-
-
-
-
-
+.cardText {
+    padding: 1rem;
+    width: 100%;
+}
 
 .popularPostsTitle {
     height: 2.5rem;
@@ -181,7 +206,7 @@ main {
 .categorieItem {
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem 0;
+    padding: .5rem 0;
 }
 
 .CategorieTitle {
@@ -190,6 +215,7 @@ main {
     align-items: center;
     justify-content: space-between;
     padding: 0 1.5rem;
+    margin-bottom: .8rem;
     box-shadow: 0px 10px 10px 0px #0000001a;
 }
 
@@ -208,4 +234,56 @@ footer {
 footer>p {
     font-weight: 600;
     font-size: .8rem;
+}
+
+@media screen and (max-width:1440px) {
+    main{
+        grid-template-columns: 1fr;
+    }
+
+    .card img{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    main {
+        padding: 1.5rem 0.5rem;
+    }
+
+    nav>h1 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 1rem 0;
+    }
+
+    nav {
+        padding: 1rem 0;
+    }
+
+    nav>h1 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .cardsList {
+        grid-template-columns: 1fr;
+    }
+
+    .seeAll {
+        padding-left: 1rem;
+    }
+
+    .recentPostsTitle .popularPostsTitle .CategorieTitle {
+        justify-content: center;
+        height: 2.5rem;
+    }
 }
